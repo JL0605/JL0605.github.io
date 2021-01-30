@@ -21,7 +21,24 @@
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
 
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+  
+  <script> 
+    $(function(){
+      $("#DivContent").load("body.html", function() {
+        alert( "Load was performed." );
+      });
+    });
+  </script> 
 </head>
+
 
 <body id="page-top">
 
@@ -55,187 +72,15 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#articles">Articles</a>
+        </li>
       </ul>
     </div>
   </nav>
 
-  <div class="container-fluid p-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Lee
-          <span class="text-primary">Jia-Long</span>
-        </h1>
-        <div class="subheading mb-5">108 Wanhua District· Taipei ·
-          <a href="mailto:qwe88957712@gmail.com">qwe88957712@gmail.com</a>
-        </div>
-        <p class="lead mb-5">I am experienced in artificial intelligence frameworks to provide a robust system for various industry.</p>
-        <div class="social-icons">
-          <a href="#">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Data Engineer </h3>
-            <p>Research and Development Substitute Services</p>
-            <div class="subheading mb-3">Reforecast Co., Ltd.</div>
-
-            <p>Provide the AI Tech Solution for Renewable Energy. Include Weather Forecast, Fault-Detection in Photovoltaic System and Wind Turbine and so on.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2019 - Present</span>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="mb-5">Education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">National Yunlin University of Science and Technology</h3>
-            <div class="subheading mb-3">Master of Business Administration</div>
-            <div>Department of Information Management</div>
-            <p>Thesis: Machine Learning Based Approach for Failure Diagnosis and Power Prediction of PV System</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2017 - June 2019</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Nanhua University</h3>
-            <div class="subheading mb-3">Bachelor of Business Administration</div>
-            <div>Department of Information Management</div>
-            <!-- <p>Dissertation: 3.23</p> -->
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2013 - June 2017</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
-
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-python"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-react"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-node-js"></i>
-          </li>
-        </ul>
-
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            AI - Tensorflow, Keras</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-        </ul>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-      <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
-       <!--  <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-        <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p> -->
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Project &amp; Conference Papers</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-lock text-warning"></i>
-            <!-- <i class="fa-li fa fa-trophy text-warning"></i> -->
-            Taipower Project</li>
-          <li>
-            <i class="fa-li fa fa-file-invoice text-warning"></i>
-            EU PVSEC 2020 - Advanced Fault Detection and Diagnosis with AI Techniques</li>
-          <li>
-            <i class="fa-li fa fa-file-invoice text-warning"></i>
-            EU PVSEC 2019 - Real-time Fault Detection in Massive Multi-Array PV Plants based on Machine Learning Techniques</li>
-
- <!--          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li> -->
-        </ul>
-      </div>
-    </section>
-
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
+  <div id="DivContent"></div>
 
 </body>
-
 </html>
