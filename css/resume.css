@@ -190,3 +190,12 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+.container {
+  margin-top: 20px;
+}
+.page {
+  display: none;
+}
+.page-active {
+  display: block;
+}
