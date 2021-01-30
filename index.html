@@ -31,10 +31,36 @@
   <script src="js/resume.min.js"></script>
   
   <script> 
+    function PageHandler(page_name){
+      if(page_name=="#articles"){
+        console.log('empty');
+        $("#DivContent").load("articale.html");
+        
+      }else{
+        console.log('456');
+        $("#DivContent").load("about.html");
+      }
+    }
     $(function(){
-      $("#DivContent").load("body.html", function() {
-        alert( "Load was performed." );
-      });
+
+      function hashHandler(){
+        this.oldHash = window.location.hash;
+        this.Check;
+
+        var that = this;
+        var detect = function(){
+            if(that.oldHash!=window.location.hash){
+                
+                PageHandler(window.location.hash)
+                
+                that.oldHash = window.location.hash;
+            }
+        };
+        this.Check = setInterval(function(){ detect() }, 100);
+      }
+      PageHandler(window.location.hash)
+      var hashDetection = new hashHandler();
+
     });
   </script> 
 </head>
